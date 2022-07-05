@@ -1,0 +1,2811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="content="cистема, предназначенная для обмена любыми документами в электронном виде юридически значимым способом между всеми юридическими и физическими лицами."">
+    <meta name="author" content="Documentolog">
+
+    <title>Самая легкая и доступная СЭД</title>
+    <link rel="icon" href="/site/images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/bootstrap.min.css?v=3.1">
+    <link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/animate.min.css?v=3.1">
+    <link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/style.css?v=3.1">
+    <link rel="stylesheet" href="/site/css/font-awesome/css/font-awesome.min.css?v=3.1"
+          type="text/css"/>
+
+    <script type="text/javascript" src="/site/doculite/cssjs/wow.min.js?v=3.1"></script>
+
+    <script src="/site/jquery/jquery-2.2.4.min.js?v=3.1"></script>
+    <script src="/site/jquery/jquery.form.js?v=3.1"></script>
+    <script src="/site/jquery/jquery.maskedinput.min.js?v=3.1"></script>
+    <script src="/site/jquery/jquery.easing.min.js?v=3.1"></script>
+    <script src="/site/bootstrap/js/bootstrap.min.js?v=3.1"></script>
+
+    <meta property="og:title" content="Самая легкая и доступная СЭД"/>
+    <meta property="og:site_name" content="doculite.kz"/>
+    <meta property="og:description"
+          content="cистема, предназначенная для обмена любыми документами в электронном виде юридически значимым способом между всеми юридическими и физическими лицами."/>
+    <meta property="og:image" content="/site/images/doculite-ad.jpg"/>
+    <style>
+        .search_question{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid rgba(0,0,0,0.4);
+            width: 70%;
+            padding:  0.5rem 1rem;
+            border-radius: 3px;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .search_question input{
+            border: none;
+            width: 100%;
+            height: 100%;
+            outline: none;
+        }
+        .search_question .iconsearch{
+            font-size: 15px;
+            color: rgba(0,0,0,0.7)
+        }
+    </style>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78889230-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'UA-78889230-6');
+        </script>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(54268353, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: false
+            });
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/54268353" style="position:absolute; left:-9999px;" alt=""/></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+        <script>
+        new WOW().init();
+
+        var localeDict = JSON.parse('{\"currentUserPost \\u043a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u0438 \\u00abcurrentCompanyName\\u00bb currentUserName \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\":\"{{currentUserPost}} \\u043a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u0438 \\u00ab{{currentCompanyName}}\\u00bb {{currentUserName}} \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\",\"currentUserName \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\":\"{{currentUserName}} \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\",\"\\u0414\\u043b\\u044f \\u043f\\u043e\\u043b\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f \\u0443\\u0432\\u0435\\u0434\\u043e\\u043c\\u043b\\u0435\\u043d\\u0438\\u0439 \\u043d\\u0430\\u043f\\u0438\\u0448\\u0438\\u0442\\u0435 \\u044d\\u0442\\u043e\\u0442 Telegram \\u0442\\u043e\\u043a\\u0435\\u043d {{employeeId}} -{{token}} \\u0431\\u043e\\u0442\\u0443 \\u0438\\u043b\\u0438 \\u043f\\u0440\\u043e\\u0439\\u0434\\u0438\\u0442\\u0435 \\u043f\\u043e \\u0441\\u0441\\u044b\\u043b\\u043a\\u0435 \\u0438 \\u043d\\u0430\\u0436\\u043c\\u0438\\u0442\\u0435 \\\"start\\\"\":\"\\u0414\\u043b\\u044f \\u043f\\u043e\\u043b\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f \\u0443\\u0432\\u0435\\u0434\\u043e\\u043c\\u043b\\u0435\\u043d\\u0438\\u0439 \\u043d\\u0430\\u043f\\u0438\\u0448\\u0438\\u0442\\u0435 \\u044d\\u0442\\u043e\\u0442 Telegram \\u0442\\u043e\\u043a\\u0435\\u043d {{employeeId}} -{{token}} \\u0431\\u043e\\u0442\\u0443 \\u0438\\u043b\\u0438 \\u043f\\u0440\\u043e\\u0439\\u0434\\u0438\\u0442\\u0435 \\u043f\\u043e \\u0441\\u0441\\u044b\\u043b\\u043a\\u0435 \\u0438 \\u043d\\u0430\\u0436\\u043c\\u0438\\u0442\\u0435 \\\"start\\\"\",\"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c {{pack.amount_with_nds | appNumber}} {{currency}} \\u0432 \\u043c\\u0435\\u0441\\u044f\\u0446\":\"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c {{pack.amount_with_nds | appNumber}} {{currency}} \\u0432 \\u043c\\u0435\\u0441\\u044f\\u0446\",\"\\u041f\\u043e\\u0434\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043a \\u043f\\u0435\\u0440\\u0435\\u043f\\u0438\\u0441\\u043a\\u0435 \\u0441 \\u0413\\u041e \\u2013 50 000 {{currency}}\":\"\\u041f\\u043e\\u0434\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043a \\u043f\\u0435\\u0440\\u0435\\u043f\\u0438\\u0441\\u043a\\u0435 \\u0441 \\u0413\\u041e \\u2013 50 000 {{currency}}\",\"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u043d\\u043e itemsOnPage \\u0438\\u0437 totalItems\":\"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u043d\\u043e {{itemsOnPage}} \\u0438\\u0437 {{totalItems}}\",\"\\u041e\\u043f\\u0435\\u0440\\u0430\\u0442\\u043e\\u0440 \\u0443\\u0441\\u043b\\u0443\\u0433\\u0438: {{ service.provider }}\":\"\\u041e\\u043f\\u0435\\u0440\\u0430\\u0442\\u043e\\u0440 \\u0443\\u0441\\u043b\\u0443\\u0433\\u0438: {{ service.provider }}\",\"\\u0411\\u043b\\u0430\\u0433\\u043e\\u043d\\u0430\\u0434\\u0435\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c \\u043a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442\\u0430 title\":\"\\u0411\\u043b\\u0430\\u0433\\u043e\\u043d\\u0430\\u0434\\u0435\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c \\u043a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442\\u0430 {{title}}\",\"\\u0418\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u043d\\u043e {{usedMemory}} \\u041c\\u0431 ({{usedMemoryPercent}}%) \\u0438\\u0437 {{totalMemory}} \\u041c\\u0431\":\"\\u0418\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u043d\\u043e {{usedMemory}} \\u041c\\u0431 ({{usedMemoryPercent}}%) \\u0438\\u0437 {{totalMemory}} \\u041c\\u0431\",\"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a \\u00abtitle\\u00bb\":\"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a \\u00ab{{title}}\\u00bb\",\"\\u041a\\u043e\\u0440\\u0440\\u0435\\u0441\\u043f\\u043e\\u043d\\u0434\\u0435\\u043d\\u0442 \\u0441 \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u043e\\u0434\\u043e\\u043c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442, \\u0432\\u043e\\u0437\\u043c\\u043e\\u0436\\u043d\\u043e \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\":\"\\u041a\\u043e\\u0440\\u0440\\u0435\\u0441\\u043f\\u043e\\u043d\\u0434\\u0435\\u043d\\u0442 \\u0441 \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u043e\\u0434\\u043e\\u043c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442, \\u0432\\u043e\\u0437\\u043c\\u043e\\u0436\\u043d\\u043e \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\",\"\\u041a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442 <b>docSendFullName<\\/b> \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u0438\\u043b \\u0412\\u0430\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442. \\u0414\\u0430\\u043d\\u043d\\u044b\\u0439 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442 \\u0431\\u044b\\u043b \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u0430\\u043d \\u042d\\u0426\\u041f \\u0438 \\u044f\\u0432\\u043b\\u044f\\u0435\\u0442\\u0441\\u044f \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438-\\u0437\\u043d\\u0430\\u0447\\u0438\\u043c\\u044b\\u043c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u043e\\u043c.\":\"\\u041a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442 <b>{{ docSendFullName }}<\\/b> \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u0438\\u043b \\u0412\\u0430\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442. \\u0414\\u0430\\u043d\\u043d\\u044b\\u0439 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442 \\u0431\\u044b\\u043b \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u0430\\u043d \\u042d\\u0426\\u041f \\u0438 \\u044f\\u0432\\u043b\\u044f\\u0435\\u0442\\u0441\\u044f \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438-\\u0437\\u043d\\u0430\\u0447\\u0438\\u043c\\u044b\\u043c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u043e\\u043c.\",\"\\u0412\\u044b \\u0442\\u0430\\u043a\\u0436\\u0435 \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u044b \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u0438 \\u0444\\u0438\\u0437\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u043b\\u0438\\u0446\\u0430\\u043c, \\u0430 \\u0442\\u0430\\u043a\\u0436\\u0435 \\u0432 \\u0433\\u043e\\u0441\\u0443\\u0434\\u0430\\u0440\\u0441\\u0442\\u0432\\u0435\\u043d\\u043d\\u044b\\u0435 \\u043e\\u0440\\u0433\\u0430\\u043d\\u044b\\/\\u0443\\u0447\\u0440\\u0435\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f, \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u044b\\u0432\\u0430\\u0442\\u044c \\u0434\\u0432\\u0443\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0438 \\u0442\\u0440\\u0435\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0434\\u043e\\u0433\\u043e\\u0432\\u043e\\u0440\\u0430, <u>\\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u0432\\u0448\\u0438\\u0441\\u044c<\\/u> \\u043d\\u0430 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441\\u0435 Doculite.\":\"\\u0412\\u044b \\u0442\\u0430\\u043a\\u0436\\u0435 \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u044b \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u0438 \\u0444\\u0438\\u0437\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u043b\\u0438\\u0446\\u0430\\u043c, \\u0430 \\u0442\\u0430\\u043a\\u0436\\u0435 \\u0432 \\u0433\\u043e\\u0441\\u0443\\u0434\\u0430\\u0440\\u0441\\u0442\\u0432\\u0435\\u043d\\u043d\\u044b\\u0435 \\u043e\\u0440\\u0433\\u0430\\u043d\\u044b\\/\\u0443\\u0447\\u0440\\u0435\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f, \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u044b\\u0432\\u0430\\u0442\\u044c \\u0434\\u0432\\u0443\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0438 \\u0442\\u0440\\u0435\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0434\\u043e\\u0433\\u043e\\u0432\\u043e\\u0440\\u0430, <a href=\\\"https:\\/\\/doculite.kz\\/registration\\\" target=\\\"_blank\\\">\\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u0432\\u0448\\u0438\\u0441\\u044c<\\/a> \\u043d\\u0430 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441\\u0435 Doculite.\",\"\\u0413\\u043e\\u043b\\u043e\\u0441\\u0443\\u044f, \\u0412\\u044b \\u0441\\u043e\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442\\u0435\\u0441\\u044c \\u0441 \\u0443\\u0441\\u043b\\u043e\\u0432\\u0438\\u044f\\u043c\\u0438 \\u043e\\u0444\\u0435\\u0440\\u0442\\u044b.\":\"\\u0413\\u043e\\u043b\\u043e\\u0441\\u0443\\u044f, \\u0412\\u044b \\u0441\\u043e\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442\\u0435\\u0441\\u044c \\u0441 \\u0443\\u0441\\u043b\\u043e\\u0432\\u0438\\u044f\\u043c\\u0438 <a href=\\\"https:\\/\\/doculite.kz\\/offer\\\" target=\\\"_blank\\\">\\u043e\\u0444\\u0435\\u0440\\u0442\\u044b<\\/a>.\",\"Document not found\":\"\\u0414\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442 \\u043d\\u0430 \\u043d\\u0430\\u0439\\u0434\\u0435\\u043d\",\"\\u0422\\u043e\\u043b\\u044c\\u043a\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\":\"\\u0422\\u043e\\u043b\\u044c\\u043a\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\"}');
+
+        function translate(s, params) {
+            if (localeDict[s]) {
+                var res = localeDict[s];
+                for (var k in params) {
+                    res = res.replace(new RegExp(k, 'g'), params[k]);
+                }
+                return res;
+            }
+            return s;
+        }
+    </script>
+    <style>
+        .list_item-white-important {
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="MiniMobileAppOffer">
+    <div class="MiniMobileAppOffer-Icon">
+        <img src="/site/images/mobile-app/app-icon.png" alt="">
+    </div>
+    <div class="MiniMobileAppOffer-Close"></div>
+    <div class="MiniMobileAppOffer-Desc">
+        Работайте в системе Doculite с мобильного приложения.        Удобнее. Быстрее. Легче.        <br>
+        <a href="#" class="MiniMobileAppOffer_Download MobileAppLink">Установить</a>
+    </div>
+</div>
+
+<nav class="Header wow fadeInDown">
+    <div class="Header-Top">
+        <div class="container">
+            <ul class="Top-Menu">
+                <li class="logged-item">
+                    <a href="#" onclick="toSite();return false;" class="sing-in-btn with-dropdown">
+                        <i class="fa fa-user"></i>
+                        <span id="displayName"></span>
+                    </a>
+                    <div class="user-menu">
+                        <button id="user-menu-dropdown-button">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <ul id="user-menu-dropdown-menu" data-state="close">
+                            <li>
+                                <a href="#" onclick="logout();return false;">
+                                    <i class="fa fa-sign-out" aria-hidden="true"
+                                       style="margin-right: 5px;"></i>Выход                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="not-logged-item" style="display: none;">
+                    <a href="/login" class="sing-in-btn">Войти</a>
+                </li>
+                <li class="not-logged-item green-divider" style="display: none;">
+                    <a href="/registration" class="sing-in-btn">Регистрация</a>
+                </li>
+                                    <li>
+                        <div class="Lang">
+                            <div class="Lang-Selected">
+                                <span class="Lang-Item ">RU <img
+                                            src="/site/images/russia-flag-xs.png" alt=""></span>
+                                <span class="Lang-Item hidden">KZ <img
+                                            src="/site/images/kazakhstan-flag-xs.png" alt=""></span>
+                            </div>
+                            <div class="LangDropdown">
+                                <ul class="LangsList">
+                                    <li>
+                                        <button onclick="changeLang('ru')"
+                                                disabled >
+                                            <span class="Lang-Item">RU <img src="/site/images/russia-flag-xs.png"
+                                                                            alt=""></span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onclick="changeLang('kz')"
+                                                 >
+                                            <span class="Lang-Item">KZ <img src="/site/images/kazakhstan-flag-xs.png"
+                                                                            alt=""></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="container Header-Main">
+        <a class="Header-Logo" href="/"><img src="/site/doculite/imgs/header_logo.png" alt="Doculite"/></a>
+        <button type="button" class="navbar-toggle" onclick="toggleMenu()">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="Header-Menu">
+                            <li>
+                    <a href="/tariffs" class="list_item-white-important">Цены</a>
+                </li>
+                <li>
+                    <a href="/clients" class="list_item-white-important">Контрагенты</a>
+                </li>
+                <li>
+                    <a href="/certification-instruction">Услуги НПП</a>
+                </li>
+                                    <li>
+                        <a href="/useful" class="list_item-white-important">Полезные материалы</a>
+                    </li>
+                                <!--                <li>-->
+                <!--                    <a href="https://partner.doculite.kz"-->
+                <!--                       target="_blank">--><!--</a>-->
+                <!--                </li>-->
+                <li>
+                    <a href="/tracking" class="list_item-white-important">Проверка документа</a>
+                </li>
+                <li>
+                    <a href="/contacts" class="list_item-white-important">Контакты</a>
+                </li>
+                    </ul>
+    </div>
+</nav>
+<script type="text/javascript">
+    // if ($(location).attr('pathname') === '/landing') {
+    //     $('.select-lang').parent().attr('style', 'margin-left: 30px');
+    // }
+
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    $(() => {
+        const cookieName = '_lang';
+
+        if (getCookie(cookieName)) {
+            $('.select-lang').val(getCookie(cookieName));
+        } else {
+            document.cookie = "_lang=ru";
+        }
+    });
+
+    function changeLang(lang) {
+        document.cookie = "_lang=" + lang;
+        document.location.reload(true);
+    }
+
+    $('.select-lang').change(function () {
+        changeLang(this.value)
+    });
+
+    $('#user-menu-dropdown-button').on('click', function () {
+        if ($('#user-menu-dropdown-menu').data('state') === 'open') {
+            $('#user-menu-dropdown-menu').data('state', 'close');
+            $('#user-menu-dropdown-menu').hide();
+        } else {
+            $('#user-menu-dropdown-menu').data('state', 'open');
+            $('#user-menu-dropdown-menu').show();
+        }
+    });
+    $('#user-menu-dropdown-button').on('blur', function () {
+        setTimeout(function () {
+            $('#user-menu-dropdown-menu').data('state', 'close');
+            $('#user-menu-dropdown-menu').hide();
+        }, 200);
+    });
+
+    function toggleMenu() {
+        $('.Header-Menu').stop().slideToggle();
+    }
+
+    $(window).resize(function () {
+        var mobileBreakpoint = 992;
+
+        if ($(this).outerWidth() > mobileBreakpoint) {
+            $('.Header-Menu').removeAttr('style');
+        }
+    })
+
+    function logout() {
+        localStorage.removeItem('accessKey');
+        localStorage.removeItem('displayName');
+        window.location.href = 'https://doculite.kz/login';
+    }
+</script>
+
+<section class="header">
+    <style>
+        .header-block-btn.ml {
+            margin-left: 30px;
+        }
+        @media only screen and (max-width: 750px) {
+            .header-block {
+                margin-top: 25px !important;
+            }
+            .header-block-btn.ml {
+                margin-left: 10px;
+            }
+        }
+        @media only screen and (max-width: 404px) {
+            .header-block-btn.ml {
+                margin: 10px 0 0;
+            }
+        }
+    </style>
+    <div id="myCarousel2">
+        <div class="item item-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">
+                                В Doculite можно отправлять документы на E-mail контрагента или по SMS                            </div>
+                            <div class="header-block-text has-timer wow fadeInLeft" data-wow-delay="0.2s">
+                                Подписывайте и отправляйте Вашим контрагентам любые электронные документы в виде ссылки на E-mail  или номер телефона.                            </div>
+                            <a href="/remote-info" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">Подробнее</a>
+                            <a href="/registration?connect-pro" class="header-block-btn wow fadeInLeft ml" data-wow-delay="0.4s">Начать сейчас</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs text-center">
+                        <img src="/site/images/send-mail.png" class="wow fadeInRight" alt="" style="margin-top: 18%; height: 250px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">
+                                Голосуйте с применением ЭЦП НУЦ РК уже сейчас                            </div>
+                            <div class="header-block-text has-timer wow fadeInLeft" data-wow-delay="0.2s">
+                                В Сервисе Doculite реализован функционал, предназначенный для проведения электронного голосования (опросов) с применением электронной цифровой подписи Национального удостоверяющего центра Республики Казахстан среди физических лиц, а также без применения ЭЦП.                            </div>
+                            <a href="/vote" target="_blank" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">
+                                Узнать подробнее                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs text-center">
+                        <img src="/site/images/online-voting.svg" class="wow fadeInRight" alt="" style="margin-top: 18%; height: 250px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">
+                                Создавайте и отправляйте вакансии на Электронную биржу труда Enbek.kz прямо из Doculite                            </div>
+                            <div class="header-block-text has-timer wow fadeInLeft" data-wow-delay="0.2s">
+                                Подключайте бесплатную услугу «Электронная биржа труда Enbek.kz» и отправляйте свои вакансии на портал Enbek.kz.                                <br>
+                                Это поможет Вашей организации исполнить обязательства работодателя согласно пп. 1) п.2 ст. 28 Закона РК "О занятости населения".                            </div>
+                            <a href="https://doculite.kz/services/list" target="_blank" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">
+                                Подключить услугу                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs text-center">
+                        <img src="/site/images/services/enbek_kz_logo.png" class="wow fadeInRight" alt="" style="margin-top: 26%; height: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">
+                                Подключайтесь к переписке с госорганами                            </div>
+                            <div class="header-block-text wow fadeInLeft" data-wow-delay="0.2s">
+                                Компания Documentolog предоставляет возможность обмена документами с государственными органами РК в электронном юридически-значимом виде с использованием ЭЦП без дублирования на бумаге.                            </div>
+
+                            <a href="/gov" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">
+                                Подробнее                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs text-right">
+                        <img src="/site/doculite/imgs/slider_img_5.png" class="wow fadeInRight" alt="" style="width: 87%; margin-top: 50px; margin-bottom: 74px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">
+                                СЭД + Обмен документами                            </div>
+                            <div class="header-block-text wow fadeInLeft" data-wow-delay="0.2s">
+                                <p>
+                                    Documentolog Lite (Doculite) – <strong>лучшая СЭД</strong> для организаций малого и среднего бизнеса!                                </p>
+                                <p>
+                                    Doculite предоставляет полноценный функционал внутреннего электронного документооборота и возможность обмена документами с любыми контрагентами юридически значимым способом <strong>бесплатно!</strong>                                </p>
+                                <p>Начните работать эффективнее с Doculite прямо сейчас!</p>
+                            </div>
+
+                            <a href="/registration?connect-pro" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">Начать сейчас</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs">
+                        <img src="/site/doculite/imgs/screen.png" class="wow fadeInRight" alt="" style="width: 100%; margin-top: 50px; margin-bottom: 74px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">Ощутите эффект от автоматизации прямо сейчас!</div>
+                            <div class="header-block-text wow fadeInLeft" data-wow-delay="0.2s">
+                                Вы можете начать полноценную работу в системе Doculite прямо сейчас.                                Ведь мы дарим Вам тариф «Doculite Free» бесплатно.<br>Не откладывайте на завтра. Оцените возможности и преимущества системы Doculite и повысьте производительность Вашей компании уже сегодня.                            </div>
+
+                            <a href="/registration?connect-pro" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">Начать сейчас</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs">
+                        <img src="/site/doculite/imgs/new-v-header-img.png" class="wow fadeInRight" alt="" style="width: 100%; margin-top: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item item-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="header-block">
+                            <div class="header-block-title wow fadeInLeft">Сертификация от НПП "Атамекен" в электронном виде</div>
+                            <div class="header-block-text wow fadeInLeft" data-wow-delay="0.2s">
+                                НПП РК «Атамекен» принимает заявки и документы для оформления и выдачи сертификатов о происхождении товара и индустриальных сертификатов в электронном виде посредством сервиса Doculite.                            </div>
+                            <a href="/registration?connect-pro" class="header-block-btn wow fadeInLeft" data-wow-delay="0.4s">Начать сейчас</a>
+                            <a href="/certification-instruction" class="header-block-btn wow fadeInLeft ml" data-wow-delay="0.4s">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs">
+                        <img src="/site/doculite/imgs/screen-atameken.png" class="wow fadeInRight" alt="" style="width: 100%; margin-top: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<link rel="stylesheet" type="text/css" href="/site/owl-carousel/owl.carousel.css">
+<script src="/site/owl-carousel/owl.carousel.min.js"></script>
+<script>
+    $("#myCarousel2").owlCarousel({
+        loop: true,
+        responsive: {
+            0: {autoHeight: true},
+            576: {autoHeight: false},
+        },
+        autoplay: true,
+        autoplayTimeout: 12000,
+        nav: false,
+        items: 1,
+        autoplayHoverPause: true,
+        autoplaySpeed: 500,
+        dots: true
+    });
+</script>
+<script>
+    navigator.sayswho= (function(){
+        var ua= navigator.userAgent, tem,
+            M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+
+        if (~ua.indexOf('Instagram')) return
+
+        if(/trident/i.test(M[1])){
+            tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+            return 'IE '+(tem[1] || '');
+        }
+        if(M[1]=== 'Chrome'){
+            tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+            if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+        }
+        M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+        if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+        // switch (M[0]) {
+        //     case "Chrome":
+        //         if(M[1] < 79) {
+        //             window.location.href = "/browser-warning";
+        //         }
+        //         break;
+        //     case "Firefox":
+        //         if(M[1] < 71) {
+        //             window.location.href = "/browser-warning";
+        //         }
+        //         break;
+        //     case "Edge":
+        //         if(M[1] < 19) {
+        //             window.location.href = "/browser-warning";
+        //         }
+        //         break;
+        //     case "Safari":
+        //         if(M[1] < 19) {
+        //             window.location.href = "/browser-warning";
+        //         }
+        //         break;
+        // }
+        return M.join(' ');
+    })();
+</script>
+
+<style>
+    #myCarousel .glyphicon-chevron-left:before {
+        content: url("/site/doculite/imgs/arrow-left.png");
+        transform: rotate(90deg);
+    }
+    #myCarousel .glyphicon-chevron-right:before {
+        content: url("/site/doculite/imgs/arrow.png");
+    }
+    #myCarousel3 .glyphicon-chevron-left:before {
+        content: url("/site/doculite/imgs/arrow-left.png");
+        transform: rotate(90deg);
+    }
+    #myCarousel3 .glyphicon-chevron-right:before {
+        content: url("/site/doculite/imgs/arrow.png");
+    }
+    @media only screen and (min-width: 1200px) {
+        #presetation .container {
+            padding: 0 200px;
+        }
+    }
+    .live .row img {
+        max-height: 170px;
+        box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+    }
+    .presentation-open-btn {
+        background-color: transparent;
+        border: none;
+    }
+    .presentation-open-btn img {
+        width: 100%;
+    }
+</style>
+
+
+    <script>
+        $(function() {
+            $('.presentation-open-btn').click(function () {
+                var slider = $('#' + $(this).data('slider-id'));
+                if (!$(this).data('loaded')) {
+                    var type = $(this).data('type');
+                    var count = type === 'documentolog' ? 20 : 16;
+                    var name =  type === 'documentolog' ? 'presentation' : 'presentation-new';
+                    var html = '';
+                    for (var i = 1; i <= count; i++) {
+                        html += '<div class="item ' + (i === 1 ? 'active' : '') + '">';
+                        html += '<img src="/site/doculite/imgs/' + name + '/' + i + '.jpg" alt="slide">';
+                        html += '</div>';
+                    }
+                    if (type === 'documentolog') {
+                        $('#myCarousel .carousel-inner').html(html);
+                    }
+                    else {
+                        $('#myCarousel3 .carousel-inner').html(html);
+                    }
+                    $(this).data('loaded', 1);
+                }
+                slider.modal();
+            });
+        })
+    </script>
+    <section class="live">
+        <div class="container">
+            <div class="row">
+                                    <div class="col-sm-12 col-md-6" style="text-align: center">
+                        <div class="home-presentation" style="margin-bottom: 10px;">
+                            <h4 class="title" style="text-align: center; font-size: 18px">Презентация Documentolog</h4>
+                            <button class="presentation-open-btn" data-slider-id="slider1" data-type="documentolog">
+                                <img src="/site/doculite/imgs/presentation/1-lite.jpeg" alt="">
+                            </button>
+                        </div>
+                        <a style="text-decoration:underline;" href="/site/doculite/imgs/presentation/Documentolog-2022.pdf" download>Скачать презентацию</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6" style="text-align: center">
+                        <div class="home-presentation" style="margin-bottom: 10px;">
+                            <h4 class="title" style="text-align: center; font-size: 18px">Презентация Doculite</h4>
+                            <button class="presentation-open-btn" data-slider-id="slider2" data-type="doculite">
+                                <img src="/site/doculite/imgs/presentation-new/1-lite.jpeg" alt="">
+                            </button>
+                        </div>
+                        <a style="text-decoration:underline;" href="/site/doculite/imgs/presentation-new/Doculite-2022.pdf" download>Скачать презентацию</a>
+                    </div>
+                            </div>
+        </div>
+        <!-- Modal -->
+        <div id="slider1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                                                                                                <div class="item active">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                    </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="slider2" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                                                                                                <div class="item active">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                                                                <div class="item">
+                                    </div>
+                                                                                    </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <style>
+            .live .demo-btn {
+                background-color: #f57c00;
+                padding: 8px 30px;
+                color: #fff;
+                border-radius: 3px;
+                text-decoration: none;
+            }
+            .live {
+                padding: 30px;
+                background-color: #F5F5F5;
+            }
+            .live p{
+                font-size: 18px;
+            }
+            .live {
+                font-size: 18px;
+            }
+            .live ul i {
+                width: 15px;
+                text-align: center;
+                margin-right: 5px;
+            }
+            /*.live iframe {*/
+            /*    width: 90%;*/
+            /*    height: 400px;*/
+            /*}*/
+            /*@media (max-width: 1023px) {*/
+            /*    .live iframe {*/
+            /*        height: 250px;*/
+            /*    }*/
+            /*    #liveTimeContainer {*/
+            /*        display: none;*/
+            /*    }*/
+            /*}*/
+            /*@media (max-width: 767px) {*/
+            /*    .live iframe {*/
+            /*        height: 190px;*/
+            /*    }*/
+            /*}*/
+            .live .title {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 26px;
+                color: #45515d;
+                margin-bottom: 40px;
+            }
+        </style>
+    </section>
+
+<section class="implementation" id="advantage">
+    <div class="container">
+        <h2 class="implementation-title wow fadeInDown">Преимущества DocuLite</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 implementation-block wow fadeInUp">
+                <img src="/site/doculite/imgs/clock.png">
+                <div class="implementation-subtitle">Быстрое внедрение</div>
+                <div class="implementation-hover-text">
+                    <span>
+                        Полностью автоматизированный процесс внедрения системы. Вам предоставляется конфигурация в готовом виде, которая не требует адаптации или настройки, без дополнительных расходов и трудозатрат на внедрение СЭД.                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 implementation-block wow fadeInUp" data-wow-delay="0.4s">
+                <img src="/site/doculite/imgs/find-my-friend.png">
+                <div class="implementation-subtitle">Проверка Ваших контрагентов</div>
+                <div class="implementation-hover-text">
+                    <span>
+                        Теперь при обмене электронными документами и подписывании электронных договоров Вы можете проверить Вашего контрагента на благонадежность. Изучите контрагента, чтобы Ваши данные и финансы были в безопасности.                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 implementation-block wow fadeInUp" data-wow-delay="0.5s">
+                <img src="/site/doculite/imgs/hand.png">
+                <div class="implementation-subtitle">Предоставляется бесплатно</div>
+                <div class="implementation-hover-text">
+                    <span>
+                        Весь функционал облачной СЭД Doculite, включая обмен электронными документами с любыми контрагентами, доступен совершенно бесплатно! Вы платите только за занимаемое пространство. Для старта мы даем Вам первые 50 МБ бесплатно.                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 implementation-block wow fadeInUp" data-wow-delay="0.3s">
+                <img src="/site/doculite/imgs/flow-chart.png">
+                <div class="implementation-subtitle">Только нужные процессы</div>
+                <div class="implementation-hover-text">
+                    <span>
+                        Doculite обладает интуитивно-понятным и легким интерфейсом без лишних полей, шагов, кнопок и страниц. Только самое необходимое для работы с документами. Мы верим, что СЭД должна быть помощником в работе пользователей и не загружать их ненужной информацией.                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 implementation-block wow fadeInUp" data-wow-delay="0.1s">
+                <img src="/site/doculite/imgs/interaction.png">
+                <div class="implementation-subtitle">Documentolog office</div>
+                <div class="implementation-hover-text">
+                    <span>
+                        Работайте с документами в Doculite легко благодаря встроенному офисному решению Documentolog office! Посредством решения Вы можете создавать, редактировать и хранить документы таких типов как Word, Excel, Power Point сразу в системе.                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 implementation-block wow fadeInUp" data-wow-delay="0.2s">
+                <img src="/site/doculite/imgs/student.png">
+                <div class="implementation-subtitle">Обучение не требуется</div>
+                <div class="implementation-hover-text">
+                    <span>
+                        Doculite оснащен виртуальным обучающим гидом с пошаговыми инструкциями. Cистема подсказывает, что необходимо делать шаг за шагом, что существенно сокращает временные затраты на подготовку персонала к работе с системой.                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .moreSED .moreSED-title {
+        text-align: center;
+        color: #7e9f08;
+        padding: 0 15px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .moreSED .moreSED-item {
+        color: #fff;
+        padding: 80px 30px 120px 30px;
+        text-align: center;
+        font-size: 26px;
+        height: 410px;
+        position: relative;
+    }
+    .moreSED .moreSED-item h3 {
+        font-size: 70px;
+        margin-bottom: 30px;
+    }
+    .moreSED .moreSED-hover-text {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: 20px;
+        padding: 40px;
+    }
+    .moreSED .moreSED-hover-text img {
+        width: 110px;
+        display: block;
+        margin: 0 auto 30px;
+    }
+    .moreSED .moreSED-item:hover .moreSED-hover-text {
+        display: block;
+    }
+    .moreSED .moreSED-item:hover h3, .moreSED .moreSED-item:hover p {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1040px) {
+        .moreSED .moreSED-item {
+            font-size: 24px;
+            padding: 40px 20px;
+        }
+        .moreSED .moreSED-hover-text {
+            padding: 40px 20px;
+            font-size: 18px;
+        }
+        .moreSED .moreSED-hover-text img {
+            width: 80px;
+        }
+
+    }
+</style>
+
+    <section class="moreSED" id="moreSED">
+        <h2 class="moreSED-title wow fadeInDown">Больше чем документооборот</h2>
+
+        <div class="col-sm-4 moreSED-item" style="background-color: #212121;">
+            <h3>1</h3>
+            <p>Автоматизируйте процессы внутреннего документооборота</p>
+            <div class="moreSED-hover-text">
+                <img src="/site/doculite/imgs/contract.png">
+                Согласовывайте и подписывайте такие документы как приказы/распоряжения, СЗ, договоры, акты и другие, в электронном виде внутри компании.            </div>
+        </div>
+        <div class="col-sm-4 moreSED-item" style="background-image: url(/site/images/moreSED-bg.jpg);">
+            <h3>2</h3>
+            <p>Отправляйте документы контрагентам в электронном юридически-значимом виде</p>
+            <div class="moreSED-hover-text">
+                <img src="/site/doculite/imgs/communications.png">
+                Подписывайте со своими контрагентами договоры, акты, счета-фактуры, обменивайтесь документами, и все это в электронном юридически-значимом виде. Также Вы можете отслеживать доставку и исполнение документов.            </div>
+        </div>
+        <div class="col-sm-4 moreSED-item" style="background-color: #2b8399;">
+            <h3>3</h3>
+            <p>Обменивайтесь документами с государственными органами РК</p>
+            <div class="moreSED-hover-text">
+                <img src="/site/doculite/imgs/city-hall.png">
+                Отправляйте официальные письма в государственными органы РК и принимайте их посредством интеграции с Единой системой электронного документооборота в электронном юридически значимом виде без дублирования на бумаге.            </div>
+        </div>
+    </section>
+
+<div class="clearfix"></div>
+<br>
+<style>
+    .new-block {
+        padding: 30px 0;
+    }
+    .new-block-title {
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    .new-block-list {
+        font-size: 20px;
+        list-style: none;
+        padding-left: 70px;
+        display: inline-block;
+    }
+    .new-block-list li {
+        position: relative;
+        margin-bottom: 7px;
+        text-align: left;
+    }
+    .new-block-list li:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        display: block;
+        background-image: url(/site/doculite/imgs/check.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -40px;
+        top: 8px;
+    }
+    .new-block p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .new-block-btn {
+        font-size: 16px;
+        padding: 9px 40px 11px;
+        background-color: #92b90e;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        margin: 20px 0 10px;
+    }
+</style>
+
+<section class="section new-block">
+    <div class="container">
+        <h4 class="new-block-title">Легитимный обмен электронными документами</h4>
+        <div class="text-center">
+            <p>
+                Посредством Doculite Вы можете обмениваться документами с любыми контрагентами в юридически-значимом виде.            </p>
+            <p>
+                Какими документами можно обмениваться?                <br>
+                Акты, счета-фактуры, договора, официальные письма и любые другие электронные документы.            </p>
+            <p>
+                Это позволит Вам:            </p>
+            <ul class="new-block-list">
+                <li>исключить потери документов, а также ошибки, связанные с человеческим фактором;</li>
+                <li>отказаться от многочисленных бумажных копий документов;</li>
+                <li>сократить время доставки документов до 5 минут вне зависимости от расстояния;</li>
+                <li>существенно снизить расходы, затрачиваемые при применении бумажных документов.</li>
+            </ul>
+        </div>
+                    <div class="text-center">
+                <a href="/site/files/new_doculite.pdf" class="btn new-block-btn">Посмотреть презентацию</a>
+            </div>
+            </div>
+</section>
+<style>
+    .free-200-block {
+        background-color: #2d778f;
+        color: #fff;
+        padding: 50px 0;
+    }
+    .free-200-block h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .free-200-block p {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
+    .free-200-block i {
+        font-size: 19px;
+    }
+</style>
+
+<section class="section free-200-block">
+    <div class="container">
+        <h2>Весь функционал облачной системы документооборота Documentolog Lite доступен бесплатно!</h2>
+        <p>
+            Мы предоставляем Вашей компании бесплатно 100 Мб пространства для документов или 5 документов для отправки контрагентам, чтобы Вы смогли ощутить выгоду и оценить эффект автоматизации Doculite.        </p>
+    </div>
+</section>
+
+    <section class="section news" id="news">
+        <div class="container">
+            <div class="row">
+                <h4 class="news-title">Новости</h4>
+
+                <div id="owl-news" class="owl-carousel">
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $.get("https://apiv1.doc24.kz/json/meta/news", function(response){
+                    if(response.status) {
+                        var data = response.data;
+
+                        for(var i in data) {
+                            $('#owl-news').append('<div class="news-item">' +
+                                '<div class="news-item-title">'+data[i].title+'</div>' +
+                                '<div class="news-item-text">'+data[i].description+'</div>' +
+                                '<a class="news-item-link" href="'+data[i].link+'" target="_blank" class="news-item-link">Читать далее</a>' +
+                                '</div>');
+                        }
+
+                        $("#owl-news").owlCarousel({
+                            loop: true,
+                            responsive : {
+                                200 : { items : 1, slideBy: 1  },
+                                500 : { items : 1, slideBy: 1  },
+                                650 : { items : 2, slideBy: 1  },
+                                768 : { items : 2, slideBy: 1 },
+                                979 : { items : 1, slideBy: 1  },
+                                1100 : { items : 3, slideBy: 1 },
+                                1150 : { items : 3, slideBy: 1 }
+                            },
+                            lazyLoad : true,
+                            autoplay:true,
+                            autoplayTimeout: 16000,
+                            nav : true,
+                            dots: false,
+                            slideBy: 4,
+                            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+                        });
+                    }
+
+                }, 'json');
+            });
+        </script>
+    </section>
+
+<section class="automation" id="processes">
+    <div class="container">
+        <h2 class="automation-title wow fadeInDown">Какие процессы автоматизирует Doculite?</h2>
+        <div class="row">
+            <div class="col-sm-6 wow fadeInUp">
+                <ul class="automation-list">
+                    <li>Входящие документы</li>
+                    <li>Исходящие документы</li>
+                                            <li>Обращения лиц</li>
+                                        <li>Счет на оплату</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <ul class="automation-list">
+                                            <li>Договоры</li>
+                        <li>Счета-фактуры</li>
+                                        <li>Акты/Акты выполненных работ</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="infographic">
+        <div class="container">
+            <div class="row">
+                <h4 class="infographic-title">Doculite в цифрах</h4>
+                <div class="col-sm-4 infographic-item infographic-registered-individuals">
+                    <div class="infographic-item-wrap">
+                        <img src="/site/doculite/imgs/avatar.png" alt="">
+                        <div class="infographic-item-price"></div>
+                        <div class="infographic-item-text">физических лиц</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 infographic-item infographic-registered-companies">
+                    <div class="infographic-item-wrap">
+                        <img src="/site/doculite/imgs/enterprise.png" alt="">
+                        <div class="infographic-item-price"></div>
+                        <div class="infographic-item-text">компаний</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 infographic-item infographic-sent-documents">
+                    <div class="infographic-item-wrap">
+                        <img src="/site/doculite/imgs/file.png" alt="">
+                        <div class="infographic-item-price"></div>
+                        <div class="infographic-item-text">отправленных документов</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-4 infographic-item infographic-government">
+                    <div class="infographic-item-wrap">
+                        <img src="/site/doculite/imgs/government.png" alt="">
+                        <div class="infographic-item-price"></div>
+                        <div class="infographic-item-text">государственных органов РК</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 infographic-item infographic-tree" style="position: relative">
+                    <div class="infographic-item-wrap">
+                        <img src="/site/doculite/imgs/trees.png" alt="">
+                        <div class="infographic-item-price"></div>
+                        <div class="infographic-item-text">спасенных деревьев</div>
+                    </div>
+                </div>
+                <div class="col-sm-4 infographic-item infographic-money">
+                    <div class="infographic-item-wrap">
+                        <img src="/site/doculite/imgs/money2.png" alt="">
+                        <div class="infographic-item-price"></div>
+                        <div class="infographic-item-text">сэкономлено тенге</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-12 text-center text-muted">
+                    <span data-toggle="modal" data-target="#infoMore" style="cursor: pointer">Подробнее о расчетах</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function(){
+            var ak = localStorage.getItem('accessKey');
+            $.ajax({
+                url: "https://apiv1.doc24.kz/json/company/counters/",
+                type: "GET",
+                dataType: 'json',
+                headers: {
+                    'Access-Key': ak
+                },
+                data: {},
+                success: function (data) {
+                    if(data.status == 1) {
+                        data.data.companies.forEach(function(element){
+                            $('.recent-companies__list').append('<li><span class="recent-company__date">'+element.created_at+'</span> '+element.full_name+'</li>');
+                        });
+
+                        $(document).scroll(function(){
+                            var top_of_element = $(".infographic").offset().top;
+                            var bottom_of_element = $(".infographic").offset().top + $(".infographic").outerHeight();
+                            var bottom_of_screen = $(window).scrollTop() + $(window).height();
+                            var top_of_screen = $(window).scrollTop();
+                            var sForMonth = 'за месяц';
+
+                            if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+                                $('.infographic-registered-individuals .infographic-item-price').html('<span>'+data.data.counters.individuals+'</span><sup>+ '+data.data.counters.individuals_week + ' ' + sForMonth + '</sup>');
+                                $('.infographic-registered-companies .infographic-item-price').html('<span>'+data.data.counters.companies+'</span><sup>+ '+data.data.counters.companies_week+ ' ' + sForMonth + '</sup>');
+                                $('.infographic-sent-documents .infographic-item-price').html('<span>'+data.data.counters.documents+'</span><sup>+ '+data.data.counters.documents_week + ' ' + sForMonth + '</sup>');
+                                $('.infographic-tree .infographic-item-price').html('<span>'+(data.data.counters.documents * 0.00058823529)+'</span>');
+                                $('.infographic-government .infographic-item-price').html('<span>'+(data.data.counters.government)+'</span>');
+                                $('.infographic-money .infographic-item-price').html('<span>'+calcOld(data.data.counters.documents, 3)+'</span>');
+
+                                $('.infographic .infographic-item-price span').each(function () {
+                                    $(this).prop('Counter',0).animate({
+                                        Counter: $(this).text()
+                                    }, {
+                                        duration: 700,
+                                        easing: 'linear',
+                                        step: function (now) {
+                                            $(this).text(numberWithSpaces(now.toFixed(0)));
+                                        }
+                                    });
+                                    $(document).off('scroll');
+                                });
+                            }
+                        }).scroll();
+                    }
+                },
+            });
+        });
+        function calcOld(docCount, empCount){
+            var empPrice = 29432.832;
+            var printPrice = 50;
+            var deliveryPrice = 616.6;
+            var sum = docCount * (printPrice + deliveryPrice) + empCount * empPrice;
+            return parseInt(sum);
+        }
+        function numberWithSpaces(x) {
+            if(x === undefined) {
+                return x;
+            }
+            var parts = x.toString().split(".");
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            return parts.join(".");
+        }
+    </script>
+
+<!-- Modal -->
+<div id="infoMore" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Подробнее о расчетах</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img src="/site/doculite/imgs/trees.png" alt="" width="25">
+                    </div>
+                    <div class="col-sm-11 text-left">
+                        <p>
+                            Из 1 (одного) дерева можно получить в среднем 8500 листов бумаги согласно данным в студенческой научной работе «How Much of the Amazon Would it Take to Print the Internet?», <a href="https://www2.le.ac.uk/offices/press/press-releases/2015/april/how-much-of-the-amazon-rainforest-would-it-take-to-print-the-internet" target="_blank">опубликованной</a> в сборнике междисциплинарных трудов британского университета Лестера. По <a href="https://documentolog.kz/articles/show/22" target="_blank">статистическим данным</a> компании Documentolog один документ в среднем содержит 5 листов бумаги.                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img src="/site/doculite/imgs/water.png" alt="" width="25">
+                    </div>
+                    <div class="col-sm-10 text-left">
+                        <p>
+                            На производство 1 листа бумаги в среднем требуется 10 литров воды по данным, опубликованным в журнале США <a href="https://www.theatlantic.com/world/" target="_blank">The Antlantic Monthly</a>. По <a href="https://documentolog.kz/articles/show/22" target="_blank">статистическим данным </a>компании Documentolog один документ в среднем содержит 5 листов бумаги.                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <img src="/site/doculite/imgs/money2.png" alt="" width="25">
+                    </div>
+                    <div class="col-sm-10 text-left">
+                        <p>
+                            <a href="/site/files/presentation.pdf" target="_blank">Экономическая эффективность</a> использования обмена электронными документами рассчитана согласно исследованиям компании Documentolog.                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--                <div class="modal-footer">-->
+            <!--                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--                </div>-->
+        </div>
+
+    </div>
+</div>
+
+    <section class="section check-company" id="check-company">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="check-company-title">Проверьте Ваших контрагентов на благонадежность!</div>
+                    <div class="check-company-subtitle">Безопасный обмен документами с Doculite</div>
+                    <p>Мы разработали для Вас сервис проверки любых контрагентов на благонадежность.</p>
+                    <p>
+                        Прежде чем подписывать договора и обмениваться документами в электронном виде Вы можете изучить оценить безопасность сотрудничества с контрагентом.                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="margin-bottom: 15px">
+                    <input type="text" class="companyBIN" id="check_input" placeholder="Введите БИН или название компании">
+                </div>
+                <div class="col-sm-2">
+                    <button class="check_btn btn">Проверить сейчас</button>
+                </div>
+                <div class="col-sm-4">
+                    <div class="capture-wrap bounceIn">
+                        <script src="https://www.google.com/recaptcha/api.js?hl=ru" async defer></script>
+                        <div class="g-recaptcha" data-sitekey="6LdSnrMUAAAAAL1J4UzRaePkCYbQU0uZ4OkBL817" data-callback="imNotARobot" style="margin-bottom: 0"></div>
+                        <script>
+                            window.captchaToken = '';
+                            function checkCompany(bin) {
+                                console.log(bin);
+                                $('.companyBIN').val(bin);
+                                $('.check_btn').click();
+                            }
+                            function imNotARobot() {
+                                $(function () {
+                                    (function () {
+                                        var data = {
+                                            'bin': $('.companyBIN').val()
+                                        };
+                                        var throwRequest = false;
+                                        if (window.captchaToken) {
+                                            data.token = window.captchaToken;
+                                            throwRequest = true;
+                                        } else if($('#g-recaptcha-response').val().length){
+                                            data['g-recaptcha-response'] = $('#g-recaptcha-response').val();
+                                            throwRequest = true;
+                                        }
+                                        if (throwRequest) {
+                                            $.ajax({
+                                                type: "POST",
+                                                dataType: "json",
+                                                url: "https://apiv1.doc24.kz/json/company/company-info-service",
+                                                data: data,
+                                                beforeSend: function () {
+                                                    var sSearch = 'Поиск контрагента';
+                                                    $('.result-block .container').html('<p><i class="fa fa-spinner fa-spin"></i> ' + sSearch + '</p>').parent().show();
+                                                },
+                                                success: function (data) {
+                                                    if (data.status == 1) {
+                                                        window.captchaToken = data.token;
+                                                        if(data.data.info !== 'undefined') {
+
+                                                            if (typeof data.data.detailed_info !== 'undefined') {
+                                                                var currentDate = new Date().toJSON().slice(0, 10).split('-');
+                                                                currentDate = currentDate[2] + "." + currentDate[1] + "." + currentDate[0];
+
+                                                                var sCompanyName = 'Наименование компании:';
+                                                                var sBin = 'БИН:';
+                                                                var sActivity = 'Деятельность:';
+                                                                var sStatus = 'Статус:';
+                                                                var sRegDate = 'Дата регистрации:';
+                                                                var sGenDirector = 'Генеральный директор:';
+                                                                var sAddress = 'Адрес:';
+
+                                                                $('.result-block .container').html(
+                                                                    '<p><b>' + sCompanyName + '</b> ' + data.data.detailed_info.nameru + '</p>' +
+                                                                    '<p><b>' + sBin + '</b> ' + data.data.detailed_info.bin + '</p>' +
+                                                                    '<p><b>' + sActivity + '</b> ' + data.data.detailed_info.okedru + '</p>' +
+                                                                    '<p><b>' + sStatus + '</b> ' + data.data.detailed_info.statusru + '</p>' +
+                                                                    '<p><b>' + sRegDate + '</b> ' + data.data.detailed_info.datereg + '</p>' +
+                                                                    '<p><b>' + sGenDirector + '</b> ' + data.data.detailed_info.director + '</p>' +
+                                                                    '<p><b>' + sAddress +'</b> ' + data.data.detailed_info.addressru + '</p>' +
+                                                                    '<hr>' +
+                                                                    '<ul class="result-list"></ul>'
+                                                                ).parent().show();
+                                                                let html = '';
+                                                                for (let item in data.data.info) {
+                                                                    html += '<li class="result-list-has-children">' +
+                                                                        '<span class="result-list-status ' + (data.data.info[item].Response == 'Да' ? 'wrong' : 'ok') + '">' + data.data.info[item].Response + ' ' + (data.data.info[item].Response == 'Да' ? '<i class="fa fa-chevron-down"></i>' : '') + '</span>' +
+                                                                        '<div class="result-list-title">' +
+                                                                        item +
+                                                                        '<span class="result-list-source">Данные с ' + data.data.info[item].course + ' от' + currentDate + '</span> ' +
+                                                                        '</div>';
+                                                                    if (data.data.info[item].court_cases) {
+                                                                        html += '<table class="table table-striped">';
+                                                                        let courtCases = data.data.info[item].court_cases;
+
+                                                                        html += '<thead><tr>';
+                                                                        for (let title in courtCases[0]) {
+                                                                            html += '<th>' + title + '</th>';
+                                                                        }
+                                                                        html += '</tr></thead>';
+
+                                                                        html += '<tbody>';
+                                                                        for (let key in courtCases) {
+                                                                            html += '<tr>';
+                                                                            for (let title in courtCases[key]) {
+                                                                                console.log(courtCases[key], title);
+                                                                                html += '<td>' + courtCases[key][title] + '</td>';
+                                                                            }
+                                                                            html += '</tr>';
+                                                                        }
+                                                                        html += '</tbody>';
+
+                                                                        html += '</table>';
+                                                                    }
+                                                                    html += '</li>';
+                                                                }
+                                                                $('.result-block .result-list').append(html);
+                                                            } else {
+                                                                let html = '';
+                                                                let bins = [];
+                                                                for (let item in data.data) {
+                                                                    if(data.data[item].bin.length && bins.indexOf(data.data[item].bin) === -1) {
+                                                                        html += '<li class="result-list-has-children" style="cursor: pointer;" ' +
+                                                                            'onclick="checkCompany(\''+data.data[item].bin+'\')">' +
+                                                                            '<span class="result-list-status ok"></span>' +
+                                                                            '<div class="result-list-title">' +
+                                                                            data.data[item].nameru +
+                                                                            '<span class="result-list-source">Директор: ' + data.data[item].director + '</span> ' +
+                                                                            '</div>';
+                                                                        html += '</li>';
+
+                                                                        bins.push(data.data[item].bin);
+                                                                    }
+                                                                }
+                                                                $('.result-block .container').html('<ul class="result-list"></ul>').parent().show();
+                                                                $('.result-block .result-list').append(html);
+                                                            }
+                                                        } else {
+                                                            var sNotFound = 'Данные о компании не найдены';
+                                                            $('.result-block .container').html('<p>' + sNotFound + '</p>').parent().show();
+                                                        }
+                                                    } else {
+                                                        $('.result-block .container').html('<p>' + data.message + '</p>').parent().show();
+                                                    }
+                                                },
+                                                error: function () {
+
+                                                }
+                                            });
+                                        }
+                                    })();
+                                });
+                                $('.check_btn').on('click', function () {
+                                    $(function () {
+                                        (function () {
+                                            var data = {
+                                                'bin': $('.companyBIN').val()
+                                            };
+                                            var throwRequest = false;
+                                            if (window.captchaToken) {
+                                                data.token = window.captchaToken;
+                                                throwRequest = true;
+                                            } else if($('#g-recaptcha-response').val().length){
+                                                data['g-recaptcha-response'] = $('#g-recaptcha-response').val();
+                                                throwRequest = true;
+                                            }
+
+                                            if (throwRequest) {
+                                                $.ajax({
+                                                    type: "POST",
+                                                    dataType: "json",
+                                                    url: "https://apiv1.doc24.kz/json/company/company-info-service",
+                                                    data: data,
+                                                    beforeSend: function () {
+                                                        var sSearch = 'Поиск контрагента';
+                                                        $('.result-block .container').html('<p><i class="fa fa-spinner fa-spin"></i> ' + sSearch + '</p>').parent().show();
+                                                    },
+                                                    success: function (data) {
+                                                        if (data.status == 1) {
+                                                            window.captchaToken = data.token;
+                                                            if (typeof data.data.detailed_info !== 'undefined') {
+                                                                var currentDate = new Date().toJSON().slice(0, 10).split('-');
+                                                                currentDate = currentDate[2] + "." + currentDate[1] + "." + currentDate[0];
+                                                                var sCompanyName = 'Наименование компании:';
+                                                                var sBin = 'БИН:';
+                                                                var sActivity = 'Деятельность:';
+                                                                var sStatus = 'Статус:';
+                                                                var sRegDate = 'Дата регистрации:';
+                                                                var sGenDirector = 'Генеральный директор:';
+                                                                var sAddress = 'Адрес:';
+
+                                                                $('.result-block .container').html(
+                                                                    '<p><b>' + sCompanyName + '</b> ' + data.data.detailed_info.nameru + '</p>' +
+                                                                    '<p><b>' + sBin + '</b> ' + data.data.detailed_info.bin + '</p>' +
+                                                                    '<p><b>' + sActivity + '</b> ' + data.data.detailed_info.okedru + '</p>' +
+                                                                    '<p><b>' + sStatus + '</b> ' + data.data.detailed_info.statusru + '</p>' +
+                                                                    '<p><b>' + sRegDate + '</b> ' + data.data.detailed_info.datereg + '</p>' +
+                                                                    '<p><b>' + sGenDirector + '</b> ' + data.data.detailed_info.director + '</p>' +
+                                                                    '<p><b>' + sAddress + '</b> ' + data.data.detailed_info.addressru + '</p>' +
+                                                                    '<hr>' +
+                                                                    '<ul class="result-list"></ul>'
+                                                                ).parent().show();
+                                                                let html = '';
+                                                                for (let item in data.data.info) {
+                                                                    html += '<li class="result-list-has-children">' +
+                                                                        '<span class="result-list-status ' + (data.data.info[item].Response == 'Да' ? 'wrong' : 'ok') + '">' + data.data.info[item].Response + ' ' + (data.data.info[item].Response == 'Да' ? '<i class="fa fa-chevron-down"></i>' : '') + '</span>' +
+                                                                        '<div class="result-list-title">' +
+                                                                        item +
+                                                                        '<span class="result-list-source">Данные с ' + data.data.info[item].course + ' от ' + currentDate + '</span> ' +
+                                                                        '</div>';
+                                                                    if (data.data.info[item].court_cases) {
+                                                                        html += '<table class="table table-striped">';
+                                                                        let courtCases = data.data.info[item].court_cases;
+
+                                                                        html += '<thead><tr>';
+                                                                        for (let title in courtCases[0]) {
+                                                                            html += '<th>' + title + '</th>';
+                                                                        }
+                                                                        html += '</tr></thead>';
+
+                                                                        html += '<tbody>';
+                                                                        for (let key in courtCases) {
+                                                                            html += '<tr>';
+                                                                            for (let title in courtCases[key]) {
+                                                                                console.log(courtCases[key], title);
+                                                                                html += '<td>' + courtCases[key][title] + '</td>';
+                                                                            }
+                                                                            html += '</tr>';
+                                                                        }
+                                                                        html += '</tbody>';
+
+                                                                        html += '</table>';
+                                                                    }
+                                                                    html += '</li>';
+                                                                }
+                                                                $('.result-block .result-list').append(html);
+                                                            } else {
+                                                                let html = '';
+                                                                let bins = [];
+                                                                for (let item in data.data) {
+                                                                    if(data.data[item].bin.length && bins.indexOf(data.data[item].bin) === -1) {
+                                                                        html += '<li class="result-list-has-children" style="cursor: pointer;" ' +
+                                                                            'onclick="checkCompany(\''+data.data[item].bin+'\')">' +
+                                                                            '<span class="result-list-status ok"></span>' +
+                                                                            '<div class="result-list-title">' +
+                                                                            data.data[item].nameru +
+                                                                            '<span class="result-list-source">Директор: ' + data.data[item].director + '</span> ' +
+                                                                            '</div>';
+                                                                        html += '</li>';
+
+                                                                        bins.push(data.data[item].bin);
+                                                                    }
+                                                                }
+                                                                $('.result-block .container').html('<ul class="result-list"></ul>').parent().show();
+                                                                $('.result-block .result-list').append(html);
+                                                            }
+                                                        } else {
+                                                            $('.result-block .container').html('<p>' + data.message + '</p>').parent().show();
+                                                        }
+                                                    },
+                                                    error: function () {
+
+                                                    }
+                                                });
+                                            }
+                                        })();
+                                    });
+                                });
+                                $('.capture-wrap').remove();
+                            };
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 30px">
+                <div class="result-block" style="background-color: transparent">
+                    <div class="container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @media (min-width: 768px){
+            .modal-sm {
+                width: 333px;
+            }
+        }
+        .check-company {
+            background-color: #e9e9e9;
+            padding: 40px 0;
+        }
+        .check-company-title {
+            font-size: 26px;
+            margin-bottom: 7px;
+        }
+        .check-company-subtitle {
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+        .check-company p {
+            font-size: 17px;
+        }
+        .check_btn {
+            font-size: 16px;
+            padding: 8px 25px 10px;
+            background-color: #92b90e;
+            color: #fff;
+            outline: none;
+            border: none;
+            border-radius: 50px;
+            margin: -4px 0 0 20px;
+        }
+        .check_btn:hover {
+            background-color: #7d9e0c;
+            color: #fff;
+        }
+        .companyBIN {
+            padding: 8px 20px;
+            font-size: 18px;
+            color: #000;
+            border-radius: 5px;
+            border: none;
+            width: 360px;
+            max-width: 100%;
+        }
+        @media only screen and (max-width: 750px) {
+            .check_btn {
+                margin: -4px 0 0 0;
+            }
+        }
+    </style>
+    <style>
+        .capture-wrap {
+            display: none;
+        }
+        .capture-wrap.show {
+            display: block;
+        }
+        .check-company-block {
+            padding: 40px 0;
+        }
+
+        .check-company-block .title {
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+
+        #companyBIN {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            margin: 5px auto 30px;
+            font-size: 17px;
+            padding: 10px 25px;
+            border-radius: 33px;
+            border: 1px solid #bbb;
+        }
+
+        .result-block {
+            background-color: #F5F5F5;
+            padding: 30px 0;
+            display: none;
+        }
+
+        .result-block p {
+            font-size: 17px;
+        }
+
+        .result-block p b {
+            color: #1966b3;
+        }
+
+        .result-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .result-list > li {
+            text-align: left;
+            position: relative;
+            padding: 7px 30px;
+            background-color: #ffffff;
+            margin: 17px 0 0 0;
+            border: 1px solid #ededed;
+            user-select: none;
+            border-radius: 30px;
+        }
+
+        .result-list-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .result-list-source {
+            display: block;
+            font-size: 14px;
+            color: #444;
+            font-weight: 400;
+        }
+
+        .result-list-status {
+            font-weight: bold;
+            font-size: 18px;
+            float: right;
+            padding-top: 8px;
+        }
+
+        .result-list-status.ok {
+            color: #416a21;
+        }
+
+        .result-list-status.wrong {
+            color: #6a151c;
+        }
+
+        .result-list-status .fa {
+            margin-left: 10px;
+        }
+
+        .result-list > li table {
+            margin-top: 10px;
+            margin-bottom: 0;
+            /*display: none;*/
+        }
+
+        .g-recaptcha {
+            margin: 0 auto 25px;
+            width: 310px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('.check_btn').click(function () {
+                // window.location.href = '/check-company?s='+$('#check_input').val();
+                $('.capture-wrap').addClass('show');
+            });
+        });
+    </script>
+
+
+<div class="container" style="margin: 0 auto;">
+    <div class="row">
+        <div class="col-sm-12">
+            <link rel="stylesheet" type="text/css" href="/site/owl-carousel/owl.carousel.css">
+<script src="/site/owl-carousel/owl.carousel.min.js"></script>
+<div id="owl-demo3" class="owl-carousel">
+            <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client3.png" alt="АО ФНБ «Самрук-Казына»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/samrukEnergo.jpg" alt="Самрук-Энерго">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client6.png" alt="АО «Казпочта»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client1.png" alt="Қазмедиа орталығы">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/kazakhtelekom.jpg" alt="АО «Казахтелеком»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/kegok.jpg" alt="АО «KEGOC»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client5.png" alt="АО «Национальная атомная компания «Казатомпром»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client2.png" alt="Телеканал «Хабар»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client4.png" alt="Национальная палата предпринимателей Казахстана «Атамекен»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/owl_client11.png" alt="Ассоциация KAZENERGY">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/damu.jpg" alt="АО «Фонд развития предпринимательства «ДАМУ»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/flipkz.jpg" alt="Интернет-магазин Flip.kz">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/jssb.jpg" alt="Жилстройсбербанк Казахстана">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/kazagro.jpg" alt="АО «Холдинг «КазАгро»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/kazakhInvest.jpg" alt="АО «Национальная компания «KAZAKH INVEST»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/kazfosfat.jpg" alt="ТОО «Казфосфат»">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/kazguu.jpg" alt="Университет КАЗГЮУ">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/nao.jpg" alt="Национальная академия образования">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/tsesna.jpg" alt="Цеснабанк">
+            </a>
+        </div>
+                <div class="item">
+            <a onclick="return false;">
+                <img src="/site/images/clients/brk.jpg" alt="Банк развития Казахстана">
+            </a>
+        </div>
+        </div>
+<script>
+    function onClientWindowOpen(src,name){
+        $('#client-modal-area .client-name h2').html(name);
+        $('#client-modal-area .client-logo img').attr('src',src);
+        $('#client-modal-area').fadeIn();
+    }
+    function onSendDocumentToClient(){
+        if(localStorage.getItem('accessKey') && localStorage.getItem('displayName')){
+            window.location.href = '/documents/create/dcs_outgoing';
+        }
+        else{
+            window.location.href = '/login';
+        }
+    }
+    $(function() {
+        $("#owl-demo3").owlCarousel({
+            loop: true,
+            responsive: {
+                200: {items: 3, slideBy: 1},
+                500: {items: 4, slideBy: 1},
+                650: {items: 6, slideBy: 2},
+                768: {items: 7, slideBy: 2},
+                979: {items: 8, slideBy: 3},
+                1100: {items: 9, slideBy: 3},
+                1150: {items: 9, slideBy: 3}
+            },
+            lazyLoad: true,
+            autoplay: true,
+            autoplayTimeout: 16000,
+            nav: true,
+            dots: false,
+            slideBy: 4,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        });
+    });
+</script>        </div>
+    </div>
+</div>
+<style>
+    .modal-areas {
+        width: 470px;
+        padding: 30px;
+        box-shadow: 0 0 0 2000px rgba(22, 22, 22, 0.55);
+        box-sizing: content-box;
+        display: none;
+    }
+
+    .modal-areas .modal-title {
+        margin: 12px 0;
+        font-weight: 400;
+        color: #88a80d;
+        text-transform: uppercase;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .modal-areas input, .modal-areas select, .modal-areas textarea{
+        border-radius: 0;
+        box-shadow: none;
+        border: 1px solid #191970;
+        padding: 8px 10px;
+        height: initial;
+        font-size: 18px;
+        margin-bottom: 25px !important;
+    }
+
+    .modal-areas button {
+        display: inline-block;
+        border: 1px solid;
+        padding: 6px 40px 8px;
+        font-weight: 600;
+        font-size: 16px;
+        background: initial;
+        border-radius: 0;
+        color: #fff;
+        background-color: #88a80d;
+        letter-spacing: 0.5px;
+    }
+
+    .modal-areas button:hover {
+        background-color: #779408;
+    }
+
+    @media (max-width: 768px) {
+        .modal-areas {
+            width: initial;
+        }
+        .owl-nav {
+            display: none;
+        }
+        #docHash {
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+        .check_eds {
+            margin-left: 0!important;
+        }
+    }
+</style>
+
+<div id="client-modal-area" class="modal-areas">
+    <span class="modal-close" onclick="$('#client-modal-area').fadeOut()">x</span>
+    <div class="client-info">
+        <div class="client-logo">
+            <img width=200px>
+        </div>
+        <div class="client-name">
+            <h2></h2>
+        </div>
+    </div>
+    <button class="btn modal-submit" onclick="onSendDocumentToClient()">Отправить документ</button>
+</div>
+
+
+
+<section class="section check-doc" id="check-doc">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 check-doc-left">
+                <div class="check-doc-title">Проверить документ</div>
+
+                <p>Хотите проверить статус документа, созданного в Doculite?</p>
+                <p>
+                    Теперь это возможно! Введите ниже уникальный код, присвоенный документу после его создания в указанных системах, и получите информацию об отправителях и адресатах электронного документа, на каком этапе он находится, подписан ли он или нет.                </p>
+                <br>
+                <input type="text" id="docHash" placeholder="Введите код">
+                <button class="check_eds">Проверить</button>
+
+                <!--                    <div class="row">-->
+                <!--                        <div class="col-xs-12 edsResult">-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section check-doc" style="background-color: #0b3b6a">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 edsResult">
+
+            </div>
+            <div class="col-xs-12">
+                <div style="text-align: center">
+                    <button class="download_eds" style="display: none; margin-bottom: 20px;">Скачать квитанцию</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function gup(name, url) {
+        if (!url) url = location.href;
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(url);
+        return results == null ? null : results[1];
+    }
+    jQuery(function () {
+        if (gup('verify')) {
+            $('#docHash').val(gup('verify'));
+            $('.check_eds').click();
+
+            $('html, body').stop().animate({
+                scrollTop: ($('#check-doc').offset().top + 200)
+            }, 1000, 'easeInOutExpo');
+        }
+    });
+    $('.check_eds').click(function () {
+        var docHash = $('#docHash').val();
+        if (!docHash.length) {
+            return false;
+        }
+        $.ajax({
+            dataType: 'json',
+            type: 'POST',
+            url: 'https://apiv1.doc24.kz/json/document/get-document-info?lang=ru',
+            data: JSON.stringify({
+                hash: docHash
+            }),
+            beforeSend: function () {
+                var sSearch = 'Поиск документа';
+                $('.edsResult').html('<div><i class="fa fa-spinner fa-spin"></i> ' + sSearch + '</div>');
+            },
+            success: function (data) {
+                if (data.status) {
+                    info = data.data;
+
+                    var sDocType = 'Тип документа';
+                    var sDocNum = '№ документа';
+                    var sOrg = 'Организация';
+                    var sSigner = 'Подписант';
+                    var sSignTime = 'Время подписи';
+                    var sSignType = 'Тип ЭЦП'
+                    var sSeeResults = 'Посмотреть результаты';
+
+                    var html = '<table class="table_eds_result" width="100%"><tbody>';
+                    html += '<tr><td>' + sDocType +'</td><td>' + info.document_type + '</td></tr>';
+                    html += '<tr><td>' + sDocNum + '</td><td>№' + info.reg_number + '</td></tr>';
+                    html += '<tr><td>' + sOrg + '</td><td>' + info.owner + '</td></tr>';
+                    html += '<tr><td>DOC ID</td><td>' + docHash + '</td></tr>';
+                    if (info.voting_url) {
+                        html += '<tr><td>' + sSeeResults + '</td><td><a target="_blank" href="' + info.voting_url + '">' + info.voting_url + '</a></td></tr>';
+                    }
+                    var i = 0;
+                    $.each(info.counter_agents, function (key, valueObj) {
+                        html += '<tr>';
+                        if(i == 0) {
+                            var sContragents = 'Контрагенты';
+                            html += '<td rowspan="' + Object.keys(info.counter_agents).length +'">' + sContragents + '</td>';
+                        }
+                        html += '<td class="tbl"><table><tbody>';
+                        html += '<tr><td>' + valueObj.full_name + '</td></tr>';
+                        if (valueObj.received_time) {
+                            var sDeliverytime = 'Время доставки:';
+                            html += '<tr><td>' + sDeliverytime + ' ' + valueObj.received_time + '</td></tr>';
+                        }
+                        html +='</tbody></table></td></tr>';
+                        i++;
+                    });
+
+                    $.each(info.eds, function (key, valueObj) {
+                        html += '<tr>';
+                        if(key == 0) {
+                            var sDocSigns = 'Электронные цифровые подписи документа';
+                            html += '<td rowspan="' + info.eds.length + '">' + sDocSigns + '</td>';
+                        }
+                        html += '<td class="tbl"><table><tbody>';
+                        html += '<tr><td width="200px">' + sOrg + '</td><td>' + valueObj.signer_company + '</td></tr>';
+                        html += '<tr><td width="200px">' + sSigner + '</td><td>' + valueObj.signer_name + '</td></tr>';
+                        if (valueObj.juridical_eds_type) {
+                            html += '<tr><td width="200px">' + sSignType +'</td><td>' + valueObj.juridical_eds_type + '</td></tr>';
+                        }
+                        html += '<tr><td width="200px">' + sSignTime +'</td><td>' + valueObj.sign_time + '</td></tr>';
+                        html +='</tbody></table></td></tr>';
+                    });
+                    html += '</tbody></table>';
+                    // var html = '';
+                    // html += '<div class="status-title" style="margin-bottom: 0px;">' + info.document_type + ' №' + info.reg_number + '</div>';
+                    // html += '<div class="result-title" style="margin-bottom: 0px;">Организация: ' + info.owner + '</div>';
+                    // html += '<div class="result-title" style="margin-bottom: 0px;">DOC ID: ' + docHash + '</div>';
+                    //
+                    // html += '<div class="result-title" style="margin-bottom: 0px;">Электронные цифровые подписи документа: </div>';
+                    // $.each(info.eds, function (key, valueObj) {
+                    //     html += '<div class="row">';
+                    //     html += '<div class="col-lg-12 col-md-12">' +
+                    //         '<span class="result-title" style="margin-bottom: 0px;">Организация: </span><b>' + valueObj.signer_company + '</b><br>' +
+                    //         '<span class="result-title" style="margin-bottom: 0px;">Подписант: </span><b>' + valueObj.signer_name + '</b><br>' +
+                    //         '<span class="result-title" style="margin-bottom: 0px;">Время подписи: </span><b>' + valueObj.sign_time + '</b><br>';
+                    //     html += '</div>';
+                    //     html += '</div>';
+                    // });
+
+                    $('.edsResult').html(html);
+                    $('.download_eds').show();
+                    $('html, body').stop().animate({
+                        scrollTop: ($('#check-doc').offset().top + 200)
+                    }, 500, 'easeInOutExpo');
+                }
+                else {
+                    $('.edsResult').html('<div style="padding: 20px 0">' + data.message + '</div>');
+                    $('.download_eds').hide();
+                }
+                //$('#docHash').val('');
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+    });
+    $('.download_eds').click(function () {
+        var docHash = $('#docHash').val();
+        if (!docHash.length) {
+            return false;
+        } else {
+            window.location.href = 'https://apiv1.doc24.kz/document/download-signs/' + docHash;
+        }
+    });
+</script>
+<!--<section class="video">
+    <div class="container">
+        <h2 class="video-title wow fadeInDown">Видеоинструкции</h2>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+</section>-->
+
+
+<div class="modal fade ConsultingRequest" id="modal-consultation_request" role="dialog" aria-hidden="true"
+     style="display: none; z-index: 99999;">
+    <div class="modal-dialog" style="width: 850px; max-width: 95%;">
+        <div class="modal-content" style="margin-bottom: 50px;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="z-index: 10;"><i
+                        class="fa fa-times"></i></button>
+            <div>
+                <div class="modal-body" style="padding: 0; display: flex">
+                    <ul class="ConsultingRequest-StepList hidden-xs hidden-sm">
+                        <li data-step="1" class="active"><span>1 Шаг</span></li>
+                        <li data-step="2"><span>2 Шаг</span></li>
+                        <li data-step="3" style="display: none"><span>3 Шаг</span></li>
+                    </ul>
+                    <div class="ConsultingRequest-RightContent">
+                        <div class="ConsultingRequest-StepContent">
+                            <form onsubmit="return false;" class="Step Step-1 active">
+                                <div class="Step-Content">
+                                    <h3 class="Step-Title">
+
+                                        Выберите категорию Вашего запроса:
+                                    </h3>
+                                    <div class = "search_question">
+                                        <input type = "text"  id = "searchinput"  placeholder = "Поиск" />
+                                        <i class="fa fa-search iconsearch"></i>
+                                    </div>
+                                    <ul class="QuestionCategories">
+                                        <!-- JS -->
+                                    </ul>
+                                    <p class="Step-OtherQuestion" data-in-step="1"
+                                       style="margin-top: 30px; margin-bottom: 0; cursor: pointer;"
+                                    >
+                                        <b>Задать свой вопрос ></b>
+                                    </p>
+                                </div>
+                            </form>
+
+                            <!-- Step 2 -->
+                            <div class="Step Step-2">
+                                <div class="Step-Content">
+                                    <h3 class="Step-Title">
+                                        <!-- JS -->
+                                    </h3>
+                                    <div class="Step-Description">
+                                        <!-- JS -->
+                                    </div>
+                                    <div class="PopularQuestionsInCategory">
+                                        <div class="PopularQuestionsInCategory-Lead">
+                                            <i class="fa fa-question-circle"></i>
+                                            Популярные вопросы в данной категории:                                        </div>
+                                        <ul class="PopularQuestions">
+                                            <!-- JS -->
+                                        </ul>
+                                    </div>
+                                    <p class = "notfound">
+                                    </p>
+                                    <p class = "couldntfind">
+                                        Не нашли ответ на Ваш вопрос?                                        <a href="javascript:void(0);" class="Step-OtherQuestion" data-in-step="2">
+                                            Задайте его нам >
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="Step-Footer">
+                                    <button type="button" class="Step-Button Step-Button_Gray Step-GoBack">
+                                        <i class="fa fa-angle-left"></i>
+                                        Назад                                    </button>
+                                </div>
+                            </div>
+                            <!-- Step 2 END -->
+
+                            <div class="Step Step-3">
+                                <div class="formSuccessSubmited">
+                                    Благодарим за обратную связь!<br>Наш представитель свяжется с Вами при первой возможности.                                </div>
+                                <div class="Step-Content">
+                                    <h3 class="Step-Title">Форма обратной связи</h3>
+                                    <p style="margin-top: 0;font-size: 13px;">Поля, отмеченные звездочкой (*), являются обязательными.</p>
+                                    <form class="formInputs checkForm" id="sendFeedbackForm" enctype="multipart/form-data">
+                                        <input type="hidden" name="sType" value="">
+                                        <div class="form-group field" style="width: 100%;">
+                                            <div class="field-icon"><i class="fa fa-user"></i></div>
+                                            <input type="text" class="required" name="sEmployeeFio"
+                                                   placeholder="ФИО *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-sitemap"></i></div>
+                                            <input type="text" class="required" name="sCompanyName"
+                                                   placeholder="Название компании *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <!--                                            <div class="form-group field field-piece">-->
+                                        <!--                                                <div class="field-icon"><i class="fa fa-building"></i></div>-->
+                                        <!--                                                <input type="text" name="city" placeholder="Город">-->
+                                        <!--                                            </div>-->
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-phone"></i></div>
+                                            <input type="tel" class="phone-mask required" name="sPhone"
+                                                   placeholder="Номер телефона *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-sitemap"></i></div>
+                                            <input type="text" class="required bin-mask" name="sBin" placeholder="БИН или ИИН *"
+                                                   required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-envelope"></i></div>
+                                            <input type="email" class="email-mask required" name="sEmail"
+                                                   placeholder="Email *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div>
+                                            Для более оперативной работы службы технической поддержки просим Вас подробно описать причину обращения. Любая дополнительная информация (например, номер документа, БИН компании, имя сотрудника, скриншот ошибки) поможет нашим специалистам решить Ваш вопрос скорее.                                        </div>
+                                        <div class="form-group field" style="width: 100%;">
+                                            <textarea class="required"
+                                                      style="resize: none; height: 150px"
+                                                      name="sText" placeholder="Сообщение *"
+                                                      required></textarea>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field" style="width: 100%;">
+                                            <input type="file" id="supportFiles"
+                                                   multiple >
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="Step-Footer">
+                                            <button type="button" class="Step-Button Step-Button_Gray Step-GoBack">
+                                                <i class="fa fa-angle-left"></i>
+                                                Назад                                            </button>
+                                            <button type="submit" disabled class="Step-Button SendButtton"
+                                                    id="sendFeedbackForm_Submit">
+                                                Отправить                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="request-call" class="hidden-xs">
+    <div class="request-call-header">
+        <h2>
+            <i class="fa fa-question-circle-o" aria-hidden="true" style="font-size: 19px;margin-right: 10px;"></i>
+            Задать вопрос        </h2>
+    </div>
+</div>
+
+<script>
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    function validatePhone(phone) {
+        var re = /^(\d|\+|\-|\s|\(|\))+$/;
+        return re.test(phone) && phone.length === 16;
+    }
+
+    var callRequestFormValidate = {};
+
+    function changeCreateSystemValidateState(form = null) {
+        if (form) {
+            var isValid = true;
+
+            $('#' + form + ' .required').each(function () {
+                var name = $(this).attr('name');
+                if (!callRequestFormValidate[name]) {
+                    isValid = false;
+                }
+            });
+
+            $('#' + form + ' .SendButtton').prop('disabled', !isValid);
+        }
+    }
+
+    $('.phone-mask').mask('+7(799)999-99-99', {placeholder: "+7(7**)***-**-**"});
+    $('.bin-mask').mask('999999999999', {placeholder: "************"});
+
+    $('#sendFeedbackForm').on('submit', function (e) {
+        e.preventDefault();
+
+        var formData = new FormData($(this).get(0));
+
+        $.each($('#supportFiles')[0].files, function(i, file) {
+            formData.append('file-'+i, file);
+        });
+
+        var btn = $('#sendFeedbackForm_Submit');
+
+        btn.html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+        btn.attr('disabled', true);
+
+        $.ajax({
+            contentType: false, // важно - убираем форматирование данных по умолчанию
+            processData: false, // важно - убираем преобразование строк по умолчанию
+            data: formData,
+            type: 'post',
+            url: 'https://apiv1.doc24.kz/user/send-support-email',
+            success: function(data){
+                btn.attr('disabled', false);
+                btn.html('Отправить');
+                if (data.status != 0) {
+                    $('.formSuccessSubmited').show();
+                    $('#sendFeedbackForm').closest('.Step-Content').addClass('Blured');
+
+                    setTimeout(function () {
+                        $('.formSuccessSubmited').hide();
+
+                        resetModalForm('#sendFeedbackForm', btn);
+                    }, 5000);
+                }
+            }
+        });
+    });
+
+    function resetModalForm(sFormSelector, btn, btnText) {
+        $(sFormSelector).trigger('reset');
+        $(sFormSelector).closest('.modal').modal('hide');
+        var sSendText = 'Отправить';
+
+        if ($(sFormSelector).hasClass('checkForm')) {
+            $(sFormSelector + ' .required').each(function () {
+                var name = $(this).attr('name');
+                callRequestFormValidate[name] = false;
+                $(sFormSelector).find('.field').removeClass('success error load');
+                $('.formSuccessSubmited').hide();
+                $(sFormSelector).closest('.Step-Content').removeClass('Blured');
+                changeCreateSystemValidateState(sFormSelector.slice(1));
+                btn.val(btnText || sSendText);
+                return true
+            });
+        } else {
+            btn.prop('disabled', false).val(btnText || sSendText);
+        }
+    }
+
+    $('.checkForm .required').on('input change', function () {
+        var name = $(this).attr('name');
+        var id = $(this).closest('.checkForm').attr('id');
+        var value = $(this).val();
+        var type = $(this).attr('type');
+        var errMessage = '';
+
+        var sIncorrectTel = 'Не валидный номер телефона';
+        var sIncorrectEmail = 'Не валидный email';
+        var sIncorrectText = 'Это поле обязательно для заполнения';
+        var sIncorrectConfirmEmail = 'E-mail не совпадают!';
+
+        if (!$(this).hasClass('not-validate')) {
+            if (type == 'tel') {
+                callRequestFormValidate[name] = validatePhone(value);
+                errMessage = sIncorrectTel;
+            } else if (type == 'text' && $(this).hasClass('email-mask') || type == 'email') {
+                callRequestFormValidate[name] = validateEmail(value);
+                errMessage = sIncorrectEmail;
+            } else {
+                callRequestFormValidate[name] = !!value.trim();
+                errMessage = sIncorrectText;
+            }
+        }
+        if (callRequestFormValidate[name]) {
+            $('#' + id + ' [name=' + name + ']').parent()
+                .addClass('success')
+                .removeClass('error');
+        } else if (errMessage) {
+            $('#' + id + ' [name=' + name + ']').parent()
+                .addClass('error')
+                .removeClass('success')
+                .find('.error-message').text(errMessage);
+        }
+
+        if ($(this).hasClass('confirm')) {
+            var oInput, oInputVal;
+            if (~name.indexOf('_confirm')) {
+                oInput = $(this).attr('name').replace('_confirm', '');
+                oInputVal = $('#' + id + ' input[name=' + oInput + ']').val();
+
+                if (value === oInputVal) {
+                    callRequestFormValidate[name] = true;
+                    $('#' + id + ' [name=' + name + ']').parent()
+                        .addClass('success')
+                        .removeClass('error');
+                } else {
+                    errMessage = sIncorrectConfirmEmail;
+                    callRequestFormValidate[name] = false;
+                    $('#' + id + ' [name=' + name + ']').parent()
+                        .addClass('error')
+                        .removeClass('success')
+                        .find('.error-message').text(errMessage);
+                }
+            } else {
+                oInput = $(this).attr('name') + '_confirm';
+                oInputVal = $('#' + id + ' [name=' + oInput + ']').val();
+
+                if (oInputVal !== '') {
+                    if (value === oInputVal) {
+                        callRequestFormValidate[oInput] = true;
+                        $('#' + id + ' [name=' + oInput + ']').parent()
+                            .addClass('success')
+                            .removeClass('error');
+                    } else {
+                        errMessage = sIncorrectConfirmEmail;
+                        callRequestFormValidate[oInput] = false;
+                        $('#' + id + ' [name=' + oInput + ']').parent()
+                            .addClass('error')
+                            .removeClass('success')
+                            .find('.error-message').text(errMessage);
+                    }
+                }
+            }
+        }
+        changeCreateSystemValidateState(id);
+    });
+
+</script>
+
+<section class="MobileAppDesktop">
+    <div class="container">
+        <div class="MobileAppDesktop-Content">
+            <div class="MobileAppDesktop-Left">
+                <img src="/site/images/mobile-app/app-preview.png" alt="">
+            </div>
+            <div class="MobileAppDesktop-Right">
+                <h2 class="MobileAppDesktop-Title">Работайте в системе Doculite с мобильного приложения</h2>
+                <div class="MobileAppDesktop-Desc">Удобнее. Быстрее. Легче.</div>
+                <div class="MobileAppDesktop-Links">
+                    <a href="https://play.google.com/store/apps/details?id=com.doculite_mobile">
+                        <img src="/site/doculite/imgs/google-play-badge.png" alt="">
+                    </a>
+                    <a href="https://apps.apple.com/kz/app/doculite/id1521233092">
+                        <img src="/site/doculite/imgs/app-store-badge.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container">
+                    <div class="row">
+                                    <div class="col-md-4 col-md-offset-1">
+                        <h3 class="footer-title">Контакты</h3>
+                        <ul>
+                            <li><a href="/offer">Условия предоставления сервиса</a></li>
+                        </ul>
+                        <b>Адрес:</b>
+                        <br>
+                        г. Нур-Султан, проспект Мангилик ел, 52а, <br> БЦ "Noble"                        <br><br>
+                        <ul>
+                            <li><a href="mailto:helpdesk@documentolog.com">helpdesk@documentolog.com</a></li>
+                        </ul>
+                    </div>
+                                                    <div class="col-md-4 col-md-offset-2">
+                        <h3 class="footer-title">Последние новости</h3>
+                        <ul class="news-list">
+                        </ul>
+
+                        <script>
+                            var ak = localStorage.getItem('accessKey');
+                            $.ajax({
+                                url: "https://apiv1.doc24.kz/json/meta/news",
+                                type: "GET",
+                                dataType: 'json',
+                                headers: {
+                                    'Access-Key': ak
+                                },
+                                data: {},
+                                success: function (data) {
+                                    if (data.status) {
+                                        var data = data.data;
+                                        data.length = 4;
+                                        try {
+                                            for (var i in data) {
+                                                var date = data[i].created_at.split(' ')[0].split('-');
+                                                date = date[2] + '.' + date[1] + '.' + date[0];
+                                                $('.news-list').append('<li><a href="' + data[i].link + '" target="_blank"><div class="news-date">' + date + '</div>' + data[i].title + '</a></li>');
+                                            }
+                                        } catch (e) {}
+                                    }
+                                },
+                            });
+                        </script>
+                    </div>
+                            </div>
+        
+        <div class="socuial_foot text-center">
+            <div class="social_top text-center">
+                <ul>
+                    <li><a href="//www.facebook.com/documentolog" target="_blank" class="facebook"><img
+                                    src="/site/doculite/imgs/face.png" width="23" height="23" alt="" title=""></a></li>
+                    <li><a href="//www.linkedin.com/company/newinttech-ltd/" target="_blank" class="linkedin"><img
+                                    src="/site/doculite/imgs/in.png" width="23" height="23" alt="" title=""></a></li>
+                    <li><a href="//twitter.com/documentolog" target="_blank" class="twitter"><img
+                                    src="/site/doculite/imgs/tw.png" width="23" height="23" alt="" title=""></a></li>
+                    <li><a href="//www.youtube.com/user/TheDocumentolog" target="_blank" class="youtube"><img
+                                    src="/site/doculite/imgs/you.png" width="23" height="23" alt="" title=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div style="text-align: center;">© 2017–2022            , Частная компания «Documentolog Global Limited».
+            Разработка и поддержка корпоративного ПО. Все права защищены.        </div>
+    </div>
+</footer>
+
+<!-- Мобильное приложение -->
+<div class="BigMobileAppOffer">
+    <div class="BigMobileAppOffer-Close"></div>
+    <img class="BigMobileAppOffer-Preview" src="/site/images/mobile-app/app-preview.png" alt="">
+    <div class="BigMobileAppOffer-Icon">
+        <img src="/site/images/mobile-app/app-icon.png" alt="">
+    </div>
+    <div class="BigMobileAppOffer-Name">DocuLite</div>
+    <div class="BigMobileAppOffer-Desc">
+        Работайте в системе Doculite с мобильного приложения.        <br>
+        Удобнее. Быстрее. Легче.    </div>
+    <a href="#" class="BigMobileAppOffer-Download MobileAppLink">Установить приложение</a>
+</div>
+
+<script>
+    $(function () {
+        const isMobile = /Mobile|webOS|BlackBerry|IEMobile|MeeGo|mini|Fennec|Windows Phone|Android|iP(ad|od|hone)/i.test(navigator.userAgent);
+        const isApple = /iP(ad|od|hone)/i.test(navigator.userAgent);
+
+        if (isApple) {
+            $('.MobileAppLink').attr('href', 'https://apps.apple.com/kz/app/doculite/id1521233092');
+        } else {
+            $('.MobileAppLink').attr('href', 'https://play.google.com/store/apps/details?id=com.doculite_mobile');
+        }
+
+        function showBigMobileAppOffer() {
+            $('body').css('overflow', 'hidden');
+
+            $('.BigMobileAppOffer').addClass('active');
+        }
+
+        function hideBigMobileAppOffer() {
+            $('body').css('overflow', '');
+            $('.BigMobileAppOffer').removeClass('active');
+            localStorage.setItem('showBigMobileAppOffer', 'false')
+        }
+
+        function showMiniMobileAppOffer() {
+            $('.MiniMobileAppOffer').addClass('active');
+        }
+
+        function hideMiniMobileAppOffer() {
+            $('.MiniMobileAppOffer').removeClass('active');
+            sessionStorage.setItem('showMiniMobileAppOffer', 'false')
+        }
+
+        if (isMobile) {
+            let showBig = localStorage.getItem('showBigMobileAppOffer') || 'true';
+            let showMini = sessionStorage.getItem('showMiniMobileAppOffer') || 'true';
+
+            if (showBig === 'true') {
+                showBigMobileAppOffer();
+            }
+
+            if (showMini === 'true') {
+                showMiniMobileAppOffer();
+            }
+        } else {
+            if (
+                !window.location.pathname.includes('/registration')
+                && !window.location.pathname.includes('/login')
+            ) {
+                $('.MobileAppDesktop').show();
+            }
+        }
+
+        $('.BigMobileAppOffer-Close').on('click', hideBigMobileAppOffer);
+        $('.MiniMobileAppOffer-Close').on('click', hideMiniMobileAppOffer);
+    })
+</script>
+
+<!-- Telegram Канал -->
+<div class="TelegramInvite">
+    <div class="TelegramInvite-Lead">
+        <div class="TelegramInvite-Title">
+            Хотите быть в курсе событий компании Documentolog и IT-рынка в целом?        </div>
+        <div class="TelegramInvite-Close"></div>
+    </div>
+    <div class="TelegramInvite-Content">
+        <img src="/site/images/telegram.png" class="TelegramInvite-Icon" alt="Telegram">
+        <div class="TelegramInvite-ContentText">
+            <b>Присоединяйтесь к нашему Telegram-каналу</b> , где мы делимся последними новостями компании, информацией о новых решениях и релизах систем Documentolog и Doculite, а также рассказываем об интересных IT-новостях со всего мира.        </div>
+    </div>
+    <div class="TelegramInvite-Footer">
+        <a href="javascript:void(0)"
+           class="TelegramInvite-Button TelegramInvite-Button_Negative dontShowTelegramInvite">Больше не показывать</a>
+        <a href="https://t.me/documentolog" target="_blank"
+           class="TelegramInvite-Button TelegramInvite-Subscribe">Подписаться</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function showTelegramInvite() {
+        $('.TelegramInvite').addClass('active');
+    }
+
+    function hideTelegramInvite() {
+        $('.TelegramInvite').removeClass('active');
+    }
+
+    function dontShowTelegramInvite() {
+        localStorage.setItem('telegramInviteState', 'never');
+        hideTelegramInvite();
+    }
+
+    function initTelegramInvite() {
+        return;
+        var showState = localStorage.getItem('telegramInviteState') || 'show';
+
+        if (showState === 'show') {
+            setTimeout(function () {
+                showTelegramInvite();
+            }, 2000);
+        }
+    }
+
+    $('.TelegramInvite-Close, .TelegramInvite-Subscribe').on('click', function () {
+        hideTelegramInvite();
+    });
+
+    $('.dontShowTelegramInvite').on('click', function () {
+        dontShowTelegramInvite();
+    });
+
+    initTelegramInvite();
+</script>
+
+<script>
+    $(function () {
+        var ak = localStorage.getItem('accessKey');
+        var dn = localStorage.getItem('displayName');
+        if (ak && dn) {
+            $.ajax({
+                url: 'https://apiv1.doc24.kz/json/meta/info',
+                type: "GET",
+                dataType: 'json',
+                headers: {
+                    'Access-Key': ak
+                },
+                data: {},
+                success: function (aData) {
+                    if (aData.status) {
+                        $('.not-logged-item').hide();
+                        $('.logged-item').show();
+                        $('#displayName').text(dn);
+                    } else {
+                        // localStorage.removeItem('accessKey');
+                        // localStorage.removeItem('displayName');
+                        $('.not-logged-item').show();
+                        $('.logged-item').hide();
+                    }
+                },
+            });
+            //xhr.setRequestHeader('access-key', ak);
+            //$.get('///json/meta/info?accessKey=' + ak, function (data) {
+            //    console.log(data);
+            //    if (data.status) {
+            //        $('.not-logged-item').hide();
+            //        $('.logged-item').show();
+            //        $('#displayName').text(dn);
+            //    } else {
+            //        // localStorage.removeItem('accessKey');
+            //        // localStorage.removeItem('displayName');
+            //        $('.not-logged-item').show();
+            //        $('.logged-item').hide();
+            //    }
+            //}, 'json');
+        } else {
+            $('.not-logged-item').show();
+            $('.logged-item').hide();
+        }
+    });
+
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ))
+        return matches ? decodeURIComponent(matches[1]) : undefined
+    }
+
+    function setCookie(name, value, options) {
+        options = options || {};
+
+        var expires = options.expires;
+
+        if (typeof expires == "number" && expires) {
+            var d = new Date();
+            d.setTime(d.getTime() + expires * 1000);
+            expires = options.expires = d;
+        }
+        if (expires && expires.toUTCString) {
+            options.expires = expires.toUTCString();
+        }
+
+        value = encodeURIComponent(value);
+
+        var updatedCookie = name + "=" + value;
+
+        for (var propName in options) {
+            updatedCookie += "; " + propName;
+            var propValue = options[propName];
+            if (propValue !== true) {
+                updatedCookie += "=" + propValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
+    }
+
+    function toSite() {
+        if (localStorage.getItem('accessKey')) {
+            window.location.href = '/documents';
+        } else {
+            window.location.href = '/login';
+        }
+    }
+
+    function downloadAgent() {
+        var os = (/(win|mac|linux|sunos|solaris|iphone)/.exec(navigator.platform.toLowerCase()) || [u])[0].replace('sunos', 'solaris');
+        if (os == 'win') {
+            window.location.href = '/site/files/doc24setup.exe';
+        } else {
+            window.location.href = '/site/files/doc24macos.dmg';
+        }
+    }
+
+    function logout() {
+        $.post('https://apiv1.doc24.kz/json/user/logout?accessKey=' + localStorage.getItem('accessKey'), function (res) {
+            localStorage.removeItem('accessKey');
+            localStorage.removeItem('displayName');
+            window.location.href = '/login';
+        });
+    }
+
+    $(function () {
+        $('.sign-in .close').click(function (e) {
+            $('.sign-in').slideUp();
+        });
+    });
+    $('a.scroll-link').bind('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href').replace('/', '')).offset().top - 50)
+        }, 500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+</script>
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T6XK2QZ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<script>
+    window.API_SITE_URL = 'https://apiv1.doc24.kz';
+</script>
+<script src="/site/js/faq.js"></script>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6XK2QZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
